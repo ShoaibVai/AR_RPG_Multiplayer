@@ -36,25 +36,25 @@ public class StartGameAR : MonoBehaviour
         
         StartGameButton.interactable = false;
         
-        BlitImageForColocalization.OnTextureRendered += BlitImageForColocalizationOnTextureRendered;
+        // BlitImageForColocalization.OnTextureRendered += BlitImageForColocalizationOnTextureRendered;
     }
 
-    private void OnDestroy()
-    {
-        _sharedSpaceManager.sharedSpaceManagerStateChanged -= SharedSpaceManagerOnsharedSpaceManagerStateChanged;
-        BlitImageForColocalization.OnTextureRendered -= BlitImageForColocalizationOnTextureRendered;
-    }
+    // private void OnDestroy()
+    // {
+    //     _sharedSpaceManager.sharedSpaceManagerStateChanged -= SharedSpaceManagerOnsharedSpaceManagerStateChanged;
+    //     BlitImageForColocalization.OnTextureRendered -= BlitImageForColocalizationOnTextureRendered;
+    // }
 
-    private void BlitImageForColocalizationOnTextureRendered(Texture2D texture)
-    {
-        SetTargetImage(texture);
-        StartSharedSpace();
-    }
+    // private void BlitImageForColocalizationOnTextureRendered(Texture2D texture)
+    // {
+    //     SetTargetImage(texture);
+    //     StartSharedSpace();
+    // }
 
-    void SetTargetImage(Texture2D texture2D)
-    {
-        _targetImage = texture2D;
-    }
+    // void SetTargetImage(Texture2D texture2D)
+    // {
+    //     _targetImage = texture2D;
+    // }
 
     private void SharedSpaceManagerOnsharedSpaceManagerStateChanged(SharedSpaceManager.SharedSpaceManagerStateChangeEventArgs obj)
     {
@@ -124,12 +124,14 @@ public class StartGameAR : MonoBehaviour
     {
         isHost = true;
         OnStartSharedSpaceHost?.Invoke();
+        StartSharedSpace();
     }
 
     void JoinGameClient()
     {
         isHost = false;
         OnJoinSharedSpaceClient?.Invoke();
+        StartSharedSpace();
     }
     
     
