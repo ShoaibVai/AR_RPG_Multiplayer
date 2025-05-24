@@ -1,8 +1,9 @@
 {
   "dependencies": {
-    "com.nianticlabs.lightship": "file:E:/Download/ardk-upm-3.3.0.tgz",
-    "com.nianticlabs.lightship.sharedar": "file:E:/Download/sharedar-upm-3.3.0.tgz",
+    "com.nianticlabs.lightship": "file:D:/ardk-upm-3.3.0.tgz",
+    "com.nianticlabs.lightship.sharedar": "file:D:/sharedar-upm-3.3.0.tgz",
     "com.unity.collab-proxy": "2.8.2",
+    "com.unity.device-simulator.devices": "1.0.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.7",
     "com.unity.timeline": "1.7.7",
