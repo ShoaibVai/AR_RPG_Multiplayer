@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class EnemyDie : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private int hitCount;
+
+    private void Update()
     {
-        
+
+        // if bullet collides with the enemy for 3 times then enemy is destroyed or died
+        if(hitCount >= 3)
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("bullet"))
+        {
+            hitCount++;
+        }
     }
 }

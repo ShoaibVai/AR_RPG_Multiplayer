@@ -46,7 +46,12 @@ public class EnemyAi : MonoBehaviour
     {
         if(playerTransform != null)
         {
+            // Distance will be used if we emplement a stopping condision of chasing
+            // as i am not diong that and emeny must collide with the palyer to execute player damage
+            // so distance is unused in this context
             float distance = Vector3.Distance(transform.position, playerTransform.position);
+
+
             transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, moveSpeed *Time.deltaTime);
         }
     }
