@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.nianticlabs.lightship": {
-      "version": "file:E:/Download/ardk-upm-3.3.0.tgz",
+      "version": "file:D:/ardk-upm-3.3.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
@@ -16,7 +16,7 @@
       }
     },
     "com.nianticlabs.lightship.sharedar": {
-      "version": "file:E:/Download/sharedar-upm-3.3.0.tgz",
+      "version": "file:D:/sharedar-upm-3.3.0.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
@@ -49,6 +49,13 @@
         "com.unity.burst": "1.6.6",
         "com.unity.test-framework": "1.1.31"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.device-simulator.devices": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.editorcoroutines": {
