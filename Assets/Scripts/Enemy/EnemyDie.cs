@@ -6,21 +6,15 @@ public class EnemyDie : MonoBehaviour
 {
     private int hitCount;
 
-    private void Update()
-    {
+    
 
-        // if bullet collides with the enemy for 3 times then enemy is destroyed or died
-        if(hitCount >= 3)
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("bullet"))
+        // if Enemy collides with bullet or player it destroyes itself
+        if (collision.gameObject.CompareTag("bullet") || collision.gameObject.CompareTag("Player"))
         {
-            hitCount++;
+            Destroy(transform.gameObject);
+
         }
     }
 }
