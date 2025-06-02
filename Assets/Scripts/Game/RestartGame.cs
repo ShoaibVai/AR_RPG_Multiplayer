@@ -20,6 +20,14 @@ public class RestartGame : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     void RestartGameServerRpc()
     {
+        // Find all game objects with the "enemy" tag and destroy them
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            Destroy(enemy);
+        }
+
+        // Invoke the client RPC to trigger the OnRestartGame event
         RestartGameClientRpc();
     }
 

@@ -21,7 +21,10 @@ public class QuitGame : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     void RequestServerToQuitGameServerRpc()
     {
-        NetworkManager.Singleton.SceneManager.LoadScene("LoadScene", LoadSceneMode.Single);
+        string currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+
+        // Load the current scene using the NetworkManager
+        NetworkManager.Singleton.SceneManager.LoadScene(currentSceneName, UnityEngine.SceneManagement.LoadSceneMode.Single);
     }
 
 }
