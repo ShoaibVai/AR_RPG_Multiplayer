@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "431679264206",
+    "firebase_url": "https://arrpgmultiplayer-default-rtdb.firebaseio.com",
+    "project_id": "arrpgmultiplayer",
+    "storage_bucket": "arrpgmultiplayer.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431679264206:android:5255d69a50365f2d8d479f",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.AR_RPG_Multuplayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJpApuDtDmN3fOV6yPylHZD3q1Judoon8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
