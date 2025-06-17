@@ -4,6 +4,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemyPrefab;
+    [SerializeField] private GameObject enemyPrefab2;
     [SerializeField] private float initialSpawnInterval = 5f;
     [SerializeField] private float minSpawnInterval = 1f;
     [SerializeField] private float spawnIntervalDecrease = 0.05f;
@@ -36,7 +37,8 @@ public class EnemySpawner : MonoBehaviour
         {
             Vector3 spawnPos = GetRandomPositionAround(player.transform.position);
             Quaternion spawnRot = Quaternion.identity;
-            GameObject enemy = Instantiate(enemyPrefab, spawnPos, spawnRot);
+            GameObject enemyPrefabToUse = Random.value < 0.5f ? enemyPrefab : enemyPrefab2;
+            GameObject enemy = Instantiate(enemyPrefabToUse, spawnPos, spawnRot);
         }
     }
 
