@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:431679264206:android:5255d69a50365f2d8d479f",
+        "mobilesdk_app_id": "1:431679264206:android:7fe7fee58abd588f8d479f",
         "android_client_info": {
-          "package_name": "com.DefaultCompany.AR_RPG_Multuplayer"
+          "package_name": "com.DefaultCompany.AR_RPG_Multiplayer"
         }
       },
       "oauth_client": [],
