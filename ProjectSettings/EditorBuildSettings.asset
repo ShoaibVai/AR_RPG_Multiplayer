@@ -6,15 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Offline.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
     path: Assets/Scenes/LoadScene.unity
     guid: 2928641ea6cb9a94987d4d0f8d26064a
+  - enabled: 1
+    path: Assets/Scenes/Online.unity
+    guid: 280af9112334ef1459c03824d616d255
+  - enabled: 1
+    path: Assets/Scenes/Offline.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Niantic.Lightship.AR.LightshipSettings: {fileID: 11400000, guid: 6a9c02b9d71b39c469809d34e315703c, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: e04e3f2f40c506c4f9e9c3cd3c26e15c, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: cc3e4b9dc345cde4d9827faff148fde4, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a6c71879135c8c54393ba2eba6ad10bf, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: ebee9c232a3b2134a802af3a28e1f0a1, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 09cba8a88a3dd154c9d4ff77b32e1655, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 0354f060b97b17f47ba314a71db0599d, type: 2}
