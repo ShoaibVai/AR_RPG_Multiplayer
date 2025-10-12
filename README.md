@@ -4,12 +4,9 @@ A Unity project combining AR features with a multiplayer-ready setup and Firebas
 
 ## Demo
 
-<video controls width="720">
-  <source src="AR_RPG.mp4" type="video/mp4">
-  Your browser does not support the video tag. You can download and view the video directly: [AR_RPG.mp4](AR_RPG.mp4)
-</video>
+[![AR RPG demo](AR_RPG.gif)](AR_RPG.gif)
 
-> Note: GitHub's Markdown renderer may sanitize some HTML tags and might not show the video inline on the website. If the video doesn't appear above, click the link to open or download the file: [AR_RPG.mp4](AR_RPG.mp4)
+Click the animated preview above to open or download the full GIF. If the GIF doesn't appear inline on GitHub, you can open it directly here: [AR_RPG.gif](AR_RPG.gif)
 
 ## Tech stack
 - Unity: 2022.3.62f1 (LTS)
